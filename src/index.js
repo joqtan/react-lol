@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Home from './pages/Home'
-import 'materialize-css/dist/css/materialize.min.css'
+import App from './components/App'
+import 'tailwindcss/dist/tailwind.css'
 
 const container = document.getElementById('root')
 
-ReactDOM.render(<Home />, container)
+ReactDOM.render(<App />, container)

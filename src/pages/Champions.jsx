@@ -1,38 +1,39 @@
 import React, { Component } from 'react'
-import Navbar from '../components/Navbar'
 import ChampionList from '../components/ChampionList'
 
-export default class Home extends Component {
+export default class Champions extends Component {
   constructor() {
     super()
     this.state = {
-      data: []
+      data: [],
+      region: 'en_US',
+      patch: '9.24.2'
     }
-    console.log('1')
   }
 
   componentDidMount() {
     fetch(
-      'https://ddragon.leagueoflegends.com/cdn/9.24.2/data/en_US/champion.json'
+      `https://ddragon.leagueoflegends.com/cdn/${this.state.patch}/data/${this.state.region}/champion.json`
     )
       .then(res => {
         return res.json()
       })
       .then(response => {
         let champs = response.data
+        let dataChamps = []
         for (let i in champs) {
-          let champ = champs[i]
-          this.setState.data = this.state.data.push(champ)
+          dataChamps.push(champs[i])
         }
+        this.setState({
+          data: dataChamps
+        })
       })
-    console.log(this.state.data)
   }
 
   render() {
     return (
       <React.Fragment>
-        <Navbar />
-        <div className='container'>
+        <div className='container flex flex-wrap justify-center'>
           <ChampionList info={this.state.data} />
         </div>
       </React.Fragment>
