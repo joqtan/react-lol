@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/leaguedex/static/js/main.202bd52f.chunk.js",
+    "main.js.map": "/leaguedex/static/js/main.202bd52f.chunk.js.map",
+    "runtime-main.js": "/leaguedex/static/js/runtime-main.a125d6c2.js",
+    "runtime-main.js.map": "/leaguedex/static/js/runtime-main.a125d6c2.js.map",
+    "static/css/2.75763e73.chunk.css": "/leaguedex/static/css/2.75763e73.chunk.css",
+    "static/js/2.3397c901.chunk.js": "/leaguedex/static/js/2.3397c901.chunk.js",
+    "static/js/2.3397c901.chunk.js.map": "/leaguedex/static/js/2.3397c901.chunk.js.map",
+    "index.html": "/leaguedex/index.html",
+    "precache-manifest.88678738c2015eaa917aaa11712a3b86.js": "/leaguedex/precache-manifest.88678738c2015eaa917aaa11712a3b86.js",
+    "service-worker.js": "/leaguedex/service-worker.js",
+    "static/css/2.75763e73.chunk.css.map": "/leaguedex/static/css/2.75763e73.chunk.css.map",
+    "static/js/2.3397c901.chunk.js.LICENSE": "/leaguedex/static/js/2.3397c901.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a125d6c2.js",
+    "static/css/2.75763e73.chunk.css",
+    "static/js/2.3397c901.chunk.js",
+    "static/js/main.202bd52f.chunk.js"
+  ]
+}
